@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 2-6 | Татьяна Пархомова</title>
+    <style>
+        #app {
+            background-image: url(https://img-fotki.yandex.ru/get/67890/136164467.17/0_12bc81_21263ac1_orig.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block {
+            margin: 50px;
+            padding: auto;
+        }
+        .list {
+			counter-reset: myCounter;
+			list-style: none;
+            margin-top: -15px;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 2;
+		}
+		.list li::before {
+			content: counter(myCounter) ') ';
+			counter-increment: myCounter;
+		}
+        .link {
+            margin-top: -15px;
+            font-size: 14px;
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 2-6. Математические задачи.</h1>
+    <h2>Задание: <a target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-matematicheskie-zadachi/">ссылка</a></h2>
+    <hr>
+    <div id="app">
+        <div class="block">
+            <h2>Задачи:</h2>
+            <ol class="list">
+                <li>Решите уравнение <i>x<sup>2</sup>y<sup>3</sup>+xy=2</i> в целых числах</li>
+                <li>Найдите <i>a<sub>2015</sub></i>, если <i>a<sub>n+1</sub>=2a<sub>n</sub>-2</i> и <i>a<sub>1</sub>=3.</i></li>
+            </ol>
+            <p><a href="http://www.itmathrepetitor.ru" class="link">www.itmathrepetitor.ru</a></p>
+        </div>
+    </div>
+    <hr>
+    <a href="../index.html"><button>Вернуться на главную</button></a>
+</body>
+</html>

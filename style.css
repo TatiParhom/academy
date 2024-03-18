@@ -94,3 +94,16 @@ nav {
     border-radius: 3px;
 }
 
+.part2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.part a {
+    background-color: brown;
+    color: wheat;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 3px;
+}
