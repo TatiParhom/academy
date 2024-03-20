@@ -7,19 +7,88 @@
     <title> Задание 2-10 | Татьяна Пархомова</title>
     <style>
         #app {
-            
+            font-family: sans-serif;
         }
         .block {
-           
+            width: 605px; 
+            border-left: 1px solid #ccc;
+        }
+        p, .problem {
+            font-size: 14px; 
+            line-height: 25px;}
+        .link {
+            font-weight: bold; 
+            text-decoration: none; 
+            color: #000; 
+            float: right; 
+            font-size: 14px;
+        }
+        .inblock {
+            padding: 2px 30px;
+        }
+        .box1, .box2 {
+            display: block;
+            background-color: rgba(245, 244, 242, 0.826);
+            border: 1px solid rgb(227, 226, 226);
+            padding: 9px 5px;
+            font-size: 11px;
+        }
+        .box2 {
+            overflow-x: scroll;
+            white-space: nowrap; 
+        }
+        .box3 {
+            background-color: rgba(245, 244, 242, 0.826);
+            border: 1px solid rgb(227, 226, 226);
+            padding: 5px 5px;
+            font-size: 11px; 
+        }
+        .color1 {
+            color: lightseagreen;
+        }
+        .color2 {
+            color: rgb(181, 184, 181);
+            font-style: italic; 
         }
     </style>
 </head>
 <body>
-    <h1>Задание 2-1. Собираем проект.</h1>
+    <h1>Задание 2-10. Собираем проект.</h1>
     <h2>Задание: <a target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-sobiraem-proekt/">ссылка</a></h2>
     <hr>
     <div id="app">
-        <div class="block"></div>
+        <div class="block">
+            <div class="inblock">
+                <a href="www.itmathrepetitor.ru" class="link">www.itmathrepetitor.ru</a>
+                <p>
+                    Собираем проект:
+                </p>
+                <code class="box1">
+                    $ bem make
+                </code>
+                <p>
+                    Первая сборка с <code class="box3">bem-tools</code> займет некоторое время, так как именно в этот момент в директорию проекта устанавливаются все необходимые npm-пакеты.
+                </p>
+                <p>
+                    Для запуска сервера выполняем:
+                </p>
+                <code class="box1">
+                    $ bem server
+                </code>
+                <p>
+                    В результате вы увидете следующие сообщеие:
+                </p>
+                <code class="box2">
+                    Info: Server is listening on port <span class="color1">8080</span>. Point your browser to http://<span class="color2">licalhost:80808080</span>
+                </code>
+                <h2 class="problem">
+                    Проблема?
+                </h2>
+                <p>
+                    Если порт 8080 уже используется другой программой, его можно переназначить с помощью аргумента <code class="box3">-p</code>.
+                </p>  
+            </div>
+        </div>
     </div>
     <hr>
     <a href="../index.html"><button>Вернуться на главную</button></a>
