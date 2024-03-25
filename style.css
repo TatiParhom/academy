@@ -80,11 +80,12 @@ background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%,
 
 }
 
-#part1:hover a, #part2:hover a {
+#part1:hover a,
+#part2:hover a {
     filter: brightness(.4);
 }
 
-#part1 a:hover, #part2:hover a {
+#part1 a:hover, #part2 a:hover {
     filter: brightness(1);
 }
 
