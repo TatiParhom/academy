@@ -22,12 +22,13 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-family: "Madimi One", sans-serif;
+    font-family: comic sans ms;
 }
 
 header, footer {
-    background-color: brown;
-    color: wheat;
+    background: rgb(69,35,69);
+background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
+    color: #F0B54D;
     padding: 20px 40px;
     display: flex;
     align-items: center;
@@ -36,14 +37,15 @@ header, footer {
 }
 
 header a, footer a {
-    color: brown;
+    color: #A05663;
     padding: 5px 15px;
-    background-color: wheat;
+    background-color: #F0B54D;
     border-radius: 3px;
     text-decoration: none;
 }
 
 main {
+    background-image: url(https://reflectioncreativemedia.com/wp-content/uploads/2022/09/HTML-Code-From-A-Professional-Website-Design-Agency.jpg);
     flex: auto;
     padding: 10px 20px;
     display: flex;
@@ -57,12 +59,18 @@ nav {
 }
 
 .logo {
+    color: #AB5D6B;
+    font-family: 'Courier New';
+    font-size: 20px;
     background: none;
-    color: wheat;
+    text-decoration: underline;
+    animation: infinite;
+    
 }
 
 #part1, #part2 {
-    background-color: wheat;
+    background: rgb(69,35,69);
+background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
     padding: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -87,8 +95,8 @@ nav {
 }
 
 .part a {
-    background-color: brown;
-    color: wheat;
+    background-color: #733B54;
+    color: #FEC053;
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 3px;
@@ -100,10 +108,15 @@ nav {
     gap: 20px;
 }
 
-.part a {
-    background-color: brown;
-    color: wheat;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 3px;
+.animation {
+    color: #A05663
+    
+}
+
+h1 {
+    color: #452345;
+}
+
+h2 {
+    color: #AB5D6B;;
 }
