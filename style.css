@@ -27,7 +27,7 @@ html, body {
 
 header, footer {
     background: rgb(69,35,69);
-background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
+    background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
     color: #F0B54D;
     padding: 20px 40px;
     display: flex;
@@ -65,12 +65,23 @@ nav {
     background: none;
     text-decoration: underline;
     animation: infinite;
-    
+    display: flex;
+    gap: 20px;
 }
 
-#part1, #part2 {
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.name {
+    padding: 25px 0 0 0;
+}
+
+#part1, #part2, #part3 {
     background: rgb(69,35,69);
-background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
+    background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%, rgba(71,179,156,1) 100%);
     padding: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -81,11 +92,14 @@ background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%,
 }
 
 #part1:hover a,
-#part2:hover a {
+#part2:hover a,
+#part3:hover a {
     filter: brightness(.4);
 }
 
-#part1 a:hover, #part2 a:hover {
+#part1 a:hover, 
+#part2 a:hover,
+#part3 a:hover {
     filter: brightness(1);
 }
 
@@ -115,9 +129,10 @@ background: linear-gradient(90deg, rgba(69,35,69,1) 19%, rgba(221,101,79,1) 68%,
 }
 
 h1 {
-    color: #452345;
+    padding: 10px;
+    color: #fbcfd7;
 }
 
 h2 {
-    color: #AB5D6B;;
+    color: #fbcfd7;
 }

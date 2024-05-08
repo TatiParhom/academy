@@ -7,26 +7,82 @@
     <title> Задание 2-1 | Татьяна Пархомова</title>
     <style>
         #app {
-            background-image: url(https://img-fotki.yandex.ru/get/67890/136164467.17/0_12bc81_21263ac1_orig.png);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: sans-serif;
+	        font-size: 14px;
         }
-        .block {
-            width: 300px;
-            height: 150px;
-            border: solid 2px black;
-            margin: 50px;
-            padding: auto;
+        div {
+            width: 530px;
+            margin: 60px auto;
+            padding: 5px 30px;
+            color: #566076;
         }
+        h1 {
+            font-size: 20px;
+            font-weight: normal;
+            color: black;
+        }
+        pre {
+            display: block;
+            background-color: #FAFAFA;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        code {
+            display: inline-block;
+            background-color: #FAFAFA;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        .overflow {
+            overflow-x: scroll;
+        }
+        .tags {
+            color: #000080;
+        }
+        .atribute {
+            color: #008080;
+        }
+        .value {
+            color: #d01040;
+        }
+
+        .comment {
+            color: #999988;
+            ont-style: italic;
+        }
+        .bold {
+            color: #000000;
+            font-weight: bold;
+        }
+        .num {
+            color: #0086b3;
+        } 
     </style>
 </head>
 <body>
-    <h1>Задание 2-1. Центрированный блок.</h1>
-    <h2>Задание: <a target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-centrirovannyjj-blok/">ссылка</a></h2>
+    <h1>Создание графика</h1>
+    <h2>Задание: <a target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-sozdanie-grafika/">ссылка</a></h2>
     <hr>
     <div id="app">
-        <div class="block"></div>
+        <h1>Creating a chart</h1>
+        <p>
+            To create a chart, we need to instantiate the <code>Chart</code> class. To do this, we need to pass in the 2d context of where we want to draw the chart. Here's an example.
+        </p>
+        <pre>
+    <code></code><span class="tags">&lt;canvas</span> <span class="atribute">id=</span><span class="value">"myChart" </span><span class="atribute">width=</span><span class="value">"400"</span> <span class="atribute">height=</span><span class="value">"400"</span><span class="tag">&gt;&lt;/canvas&gt;</span></code></pre>
+		<pre><code><span class="comment">// Get the context of the canvas element we want to select</span></code>
+        <code>var ctx = document.getElementById("myChart").getContext("2d");</code>
+        <code>var myNewChart = new Chart(ctx).PolarArea(data);</code></pre>
+		<p>
+            We can also get the context of our canvas with jQuery. to do this, we need to get the DOM node out of the jQuery collection, and call the <code>getContext("2d")</code> method on that.
+        </p>
+		<pre class="overflow"><code><span class="comment">// Get context with jQuery - using jQuery's .get() method.</span></code>
+        <code><span class="bold">var</span> ctx = $(<span class="value">"#myChart"</span>).get(<span class="number">0</span>).getContext(<span class="value">"2d"</span>);</code>
+        <code><span class="comment">// This will get the first returned node in the jQuery collection</span></code>
+        <code><span class="bold">var</span> myNeChart = <span class="bold">new</span> Chart(ctx);</code></pre>
+		<p>
+            After we're instantiated the Chart class on the canvas we want to draw on, Chart.js will handle the scaling for retina displays.
+        </p>
     </div>
     <hr>
     <a href="../index.html"><button>Вернуться на главную</button></a>
