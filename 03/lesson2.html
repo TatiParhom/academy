@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-2 | Татьяна Пархомова</title>
+    <style>
+        * {
+            transition: all .2s linear;
+        }
+
+        .block-left, .block-right {
+            background-color: #872d62;
+            border: solid 5px #651142;
+            height: 200px;
+            width: 300px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+        }
+
+        .hello {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .container:hover .block-left {
+            transform: perspective(400px) rotateY(45deg);
+        }
+
+        .container:hover .block-right {
+            transform: perspective(400px) rotateY(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 3-2. Анимация.</h1>
+    <h2>Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <div class="container">
+        <h2 class="hello">HELLO</h2>
+        <div class="block-left"></div>
+        <div class="block-right"></div>
+    </div>
+    <hr>
+    <a href="../index.html"><button>Вернуться на главную</button></a>
+</body>
+</html>

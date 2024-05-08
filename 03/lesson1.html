@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-1 | Татьяна Пархомова</title>
+    <style>
+        .clock {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            margin: 100px;
+            border: 2px solid #088b86;
+            border-radius: 50%;
+        }
+    
+        .sentr {
+            line-height: 100%;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #088b86;
+        }
+
+        .minute {
+            background: #088b86;
+            width: 1%;
+            height: 40%;
+            position: relative;
+            top: -20%;
+            left: -5%;
+            transform-origin: 50% 100%;
+            animation: now 10s infinite steps(100);
+        }
+    
+        .hour {
+            background: #088b86;
+            width: 2%;
+            height: 30%;
+            position: relative;
+            top: -15%;
+            left: -4%;
+            transform-origin: 50% 100%;
+            animation: nov 60s infinite steps(100);
+        }
+    
+        @keyframes nov {
+            100%{
+            transform: rotate(360deg);
+            }
+        }
+    
+        @keyframes now {
+            100%{
+            transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 3-1. Часы.</h1>
+    <h2>Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <div class="clock">
+        <div class="sentr"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+    </div>
+    <hr>
+    <a href="../index.html"><button>Вернуться на главную</button></a>
+</body>
+</html>

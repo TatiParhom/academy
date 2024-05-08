@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-3 | Татьяна Пархомова</title>
+    <style>
+        .block {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+
+        .first {
+            display: flex;
+            align-items: center;
+            width: 600px;
+            height: 200px;
+            outline: 2px solid lightblue;
+            background-color: bisque;
+        }
+
+        .second {
+            display: flex;
+            align-items: center;
+            width: 600px;
+            height: 200px;
+            outline: 2px solid lightblue;
+            background-color: bisque;  
+        }
+
+        .third {
+            display: flex;
+            align-items: center;
+            width: 600px;
+            height: 200px;
+            outline: 2px solid lightblue;
+            background-color: bisque;
+            overflow: hidden;  
+        }
+
+        .block_2 {
+            display: grid;
+            align-items: center;
+            background-color: bisque;
+        }
+
+        .img {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            overflow: hidden;
+        }
+
+        .third:hover {
+            transition: filter 0.3s;
+            filter: grayscale(50%);
+        }
+
+        .third:hover img {
+            transform: scale(1.5);
+        }
+
+        .third img {
+            transition: transform 1s;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 3-3. Текст + картинка.</h1>
+    <h2>Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <div class="block">
+        <div class="first">
+            <p>«Нас беспокоит больше вещей, чем причиняет нам вред, и мы чаще страдаем от опасений, чем от реальности». <br> <em>Сенека</em></p>
+            <div class="img">
+            <img src="http://tande-m.ru/upload/shop_1/3/9/6/item_39626/shop_items_catalog_image39626.jpg">
+            </div> 
+        </div>
+    <div class="second">
+        <div class="img">
+            <img src="https://bogatyr.club/uploads/posts/2023-06/1686882132_bogatyr-club-p-meditatsiya-oboi-instagram-1.jpg">
+        </div>
+        <p class="block_2">«Счастливая жизнь начинается со спокойствия ума». <br> <em>Цицерон</em></p>
+    </div>
+    <div class="third">
+        <p>"Сделай шаг - и дорога появится сама собой."<br> <em>Стив Джобс</em></p>
+        <div class="img">
+            <img src="https://bogatyr.club/uploads/posts/2023-03/thumbs/1678695800_bogatyr-club-p-doroga-sredi-derevev-foni-krasivo-90.jpg">
+        </div>
+    </div>
+    <hr>
+    <a href="../index.html"><button>Вернуться на главную</button></a>
+</body>
+
+</html>
