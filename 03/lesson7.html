@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-7 | Татьяна Пархомова</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        footer {
+            font-family: Arial;
+            font-size: x-large;
+            background-color: #294f6e;
+            margin: 50px;
+            padding: 30px; 
+        }
+
+        .block {  
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .block>div {
+            flex: 0 20%;
+        }
+
+        .block>div div {
+            margin: 20px;
+        }
+
+        .ico {
+            height: 50px;
+            width: 50px;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .icons {
+            display: flex;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+        }
+
+        .facebook {
+            background-image: url("../icons/fb_gray.png");
+        }
+
+        .facebook:hover {
+            background-image: url("../icons/fb.png");
+        }
+
+        .instagram {
+            background-image: url("../icons/insta_gray.png");
+        }
+
+        .instagram:hover {
+            background-image: url("../icons/insta.png");
+        }
+
+        .youtube {
+            background-image: url("../icons/youtube_gray.png");
+        }
+  
+        .youtube:hover {
+            background-image: url("../icons/youtube.png");
+        }
+
+        .base {
+            font-family: none;
+            padding: 0 20px;
+        }
+        
+        .base a {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="base">Задание 3-7. Футер.</h1>
+    <h2 class="base">Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <footer>
+        <div class="block">
+            <div>
+                <div><a href="#">Home</a></div>
+                <div><a href="#">About</a></div>
+                <div><a href="#">Gallery</a></div>
+                <div><a href="#">News</a></div>
+            </div>
+            <div>
+                <div><a href="#">Blog</a></div>
+                <div><a href="#">FAQ</a></div>
+                <div><a href="#">Contacts</a></div>
+                <div><a href="#">Privace & cookies</a></div>  
+            </div>
+            <div class="icons">
+                <div class="facebook ico"> <img src="../icons/" alt=""> </div>
+                <div class="instagram ico"></div>
+                <div class="youtube ico"></div>        
+            </div>
+        </div>
+        <hr>
+            <p>Copyright &copy; Company 2018-2022</p>    
+    </footer>
+    <hr>
+    <div class="base">
+        <a href="../index.html"><button>Вернуться на главную</button></a>
+    </div>
+</body>
+
+</html>

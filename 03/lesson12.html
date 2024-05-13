@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-12 | Татьяна Пархомова</title>
+    <style>
+        section {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 30px;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .img_1 {
+            background-color: #36516b;
+            width: 300px;
+            height: 245px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .img_2 {
+            background-color: #36516b;
+            width: 300px;
+            height: 285px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .img_1 p, .img_2 p {
+            color: aliceblue;
+            text-align: right;
+            padding: 8px;
+            margin: 5px 15px 16px 15px;
+        }
+
+        @media screen and (min-width: 800px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+    .block_1 {grid-area: 1 / 1 / 2 / 3;}
+    .block_2 {grid-area: 2 / 1 / 3 / 3;}
+    .block_3 {
+        grid-area: 1 / 3 / 3 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+        }
+
+        @media screen and (min-width: 600px;) and (max-width: 800px) {
+            section {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 0;
+                grid-row-gap: 20px;
+            }
+            .block_1 {grid-area: 1 / 1 / 2 / 5;}
+            .block_2 {grid-area: 2 / 1 / 3 / 5;}
+            .block_3 {grid-area: 3 / 1 / 4 / 5;}
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="base">Задание 3-12. Статья с изображениями.</h1>
+    <h2 class="base">Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <section>
+        <div class="block_1">
+            <h1>Cat</h1>
+            <p>
+            The cat (Felis catus) is a small carnivorous mammal.
+            It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family.
+            The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact.
+            A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.
+            </p>
+        </div>
+        <div class="block_3">
+            <div class="img_1">
+                <img src="https://fonowik.club/uploads/posts/2023-01/1673380499_31-fonowik-club-p-koshki-v-dvizhenii-70.jpg">
+                <p>A Tabby cat in snowy weather</p>
+            </div>
+            <div class="img_2">
+                <img src="https://zooblog.ru/wp-content/uploads/2021/04/picture-1-6-e1617554968261.jpeg">
+                <p>The hooked papillae on a cat's tongue act like a hairbrush to help clean and detangle fur.</p>
+            </div>
+        </div>
+        <div class="block_2">
+            <p>
+            Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language. Cats also communicate by secreting and perceiving pheromones. 
+            </p> 
+            <p>
+            Female domestic cats can have kittens from spring to late autumn in temperate zones and throughout the year in equatorial regions, with litter sizes often ranging from two to five kittens. Domestic cats are bred and shown at events as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, as well as the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control. 
+            </p>   
+        </div>
+    </section>
+    <hr>
+    <div class="base">
+        <a href="../index.html"><button>Вернуться на главную</button></a>
+    </div>
+</body>
+</html>

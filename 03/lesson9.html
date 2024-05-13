@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3-9 | Татьяна Пархомова</title>
+    <style>
+        .menu {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            text-transform: uppercase;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 86px;
+            height: 100%;
+            overflow: hidden;
+            background-color: #808080;
+            transition: width 1s;
+            color: white;
+        }
+
+        nav:hover {
+            width: 250px;
+        }
+
+        h4 {
+            padding: 30px 25px;
+            font-weight: normal;
+        }
+
+        main {
+            padding: 30px 30px 0 160px;
+            height: 100%;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            padding: 30px 0;
+        }
+
+        #nav_menu {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        #nav_menu a {
+            display: block;
+            padding: 30px 55px;
+            padding-left: 85px;
+    
+            background-repeat: no-repeat;
+            background-size: 55px;
+            background-position: 10px 13px;
+
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.5s;
+            }
+
+        #nav_menu a:hover {
+            background-color: #5e5e5e;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        #edit {
+            background-image: url(../icons/edit.png);
+        }
+
+        #favorites{
+            background-image: url(../icons/favorites.png);
+        }
+
+        #history{
+            background-image: url(../icons/history.png);
+        }
+
+        #security{
+            background-image: url(../icons/security.png);
+        }
+
+        #settings{
+            background-image: url(../icons/settings.png);
+        }
+
+        .base {
+            position: sticky;
+            padding: 0 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="base">Задание 3-9. Боковое меню.</h1>
+    <h2 class="base">Задание: <a target="_blank" href="">ссылка</a></h2>
+    <hr>
+    <div class="menu">
+    <nav>
+        <h4>Menu</h4>
+        <ul id="nav_menu">
+            <li><a id="edit" href="#1">Edit</a></li>
+            <li><a id="favorites" href="#2">Favorites</a></li>
+            <li><a id="history" href="#3">History</a></li>
+            <li><a id="security" href="#4">Security</a></li>
+            <li><a id="settings" href="#5">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>What is Lorem Ipsum?</h1>
+            span Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Why do we use it?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Where does it come from?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Whatever?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>What is Lorem Ipsum?</h1>
+            span Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Why do we use it?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Where does it come from?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Whatever?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias q0.5uam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>What is Lorem Ipsum?</h1>
+            span Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Why do we use it?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Where does it come from?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+        <section>
+            <h1>Whatever?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos quod nam autem? Repellendus assumenda, ipsum cumque corrupti voluptatum sequi nulla natus. Atque voluptatibus sit, dolor nihil pariatur molestias neque.
+            Alias optio, incidunt voluptate quo repellendus reiciendis, tenetur asperiores iste repellat a ratione harum doloremque et. Quod nihil soluta quae natus veniam atque eaque, itaque in tempora aspernatur architecto alias!
+            Rem vel alias quam, sit laboriosam amet possimus esse nam. Ipsam, cumque non dolorem necessitatibus tenetur velit magni repudiandae, ipsum aliquid ullam soluta nemo deleniti impedit amet in animi voluptatum?
+        </section>
+    </main>
+    </div>
+    <hr>
+    <div class="base">
+        <a href="../index.html"><button>Вернуться на главную</button></a>
+    </div>
+</body>
+</html>
